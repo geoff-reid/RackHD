@@ -1,6 +1,6 @@
 ---
 - name: Get RackHD from source
-  git: repo=https://github.com/rackhd/rackhd
+  git: repo=https://github.com/geoff-reid/rackhd
        dest=/home/vagrant/src
        accept_hostkey=true
        version="{{ branch | default('master') }}"
