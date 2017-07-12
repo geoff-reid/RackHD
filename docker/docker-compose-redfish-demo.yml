@@ -29,7 +29,7 @@ services:
 #      - "./dhcp/defaults:/etc/defaults"
 
   files:
-    image: rackhd/files:${TAG}
+    image: rackhd/files:devel
     network_mode: "host"
     privileged: true
     volumes:
@@ -45,12 +45,12 @@ services:
 
   core:
     build: "../on-core"
-    image: rackhd/on-core:${TAG}
+    image: rackhd/on-core:devel
     command: "/bin/echo \"exit\""
 
   tasks:
     build: "../on-tasks"
-    image: rackhd/on-tasks:${TAG}
+    image: rackhd/on-tasks:devel
     command: "/bin/echo \"exit\""
 
 #  dhcp-proxy: # 68/udp, 4011
@@ -59,7 +59,7 @@ services:
 #      - dhcp
 #      - mongo
 #      - rabbitmq
-#    image: rackhd/on-dhcp-proxy:${TAG}
+#    image: rackhd/on-dhcp-proxy:devel
 #    network_mode: "host"
 #    privileged: true
 #    volumes:
@@ -73,7 +73,7 @@ services:
       - mongo
       - rabbitmq
       - tasks
-    image: rackhd/on-http:${TAG}
+    image: rackhd/on-http:devel
     network_mode: "host"
     privileged: true
     volumes:
@@ -85,7 +85,7 @@ services:
     depends_on:
       - mongo
       - rabbitmq
-    image: rackhd/on-syslog:${TAG}
+    image: rackhd/on-syslog:devel
     network_mode: "host"
     privileged: true
     volumes:
@@ -99,7 +99,7 @@ services:
       - rabbitmq
       - syslog
       - tasks
-    image: rackhd/on-taskgraph:${TAG}
+    image: rackhd/on-taskgraph:devel
     network_mode: "host"
     privileged: true
     volumes:
@@ -112,7 +112,7 @@ services:
       - mongo
       - rabbitmq
       - syslog
-    image: rackhd/on-tftp:${TAG}
+    image: rackhd/on-tftp:devel
     network_mode: "host"
     privileged: true
     volumes:
