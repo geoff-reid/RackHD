@@ -9,7 +9,7 @@
 	url = https://github.com/RackHD/on-dhcp-proxy.git
 [submodule "on-taskgraph"]
 	path = on-taskgraph
-	url = https://github.com/RackHD/on-taskgraph.git
+	url = https://github.com/geoff-reid/on-taskgraph.git
 [submodule "on-statsd"]
 	path = on-statsd
 	url = https://github.com/RackHD/on-statsd.git
@@ -21,7 +21,7 @@
 	url = https://github.com/RackHD/on-core.git
 [submodule "on-tasks"]
 	path = on-tasks
-	url = https://github.com/RackHD/on-tasks.git
+	url = https://github.com/geoff-reid/on-tasks.git
 [submodule "on-imagebuilder"]
 	path = on-imagebuilder
 	url = https://github.com/RackHD/on-imagebuilder.git
