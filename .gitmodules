@@ -1,6 +1,6 @@
 [submodule "on-http"]
 	path = on-http
-	url = https://github.com/RackHD/on-http.git
+	url = https://github.com/geoff-reid/on-http.git
 [submodule "on-tftp"]
 	path = on-tftp
 	url = https://github.com/RackHD/on-tftp.git
