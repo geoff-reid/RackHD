@@ -18,7 +18,7 @@
 	url = https://github.com/RackHD/on-syslog.git
 [submodule "on-core"]
 	path = on-core
-	url = https://github.com/RackHD/on-core.git
+	url = https://github.com/geoff-reid/on-core.git
 [submodule "on-tasks"]
 	path = on-tasks
 	url = https://github.com/geoff-reid/on-tasks.git
