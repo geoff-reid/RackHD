@@ -43,8 +43,7 @@ popd
 
 # third wave, symlink in on-core and on-tasks
 
-#REPOS="on-dhcp-proxy on-http on-statsd on-syslog on-tftp on-taskgraph on-wss"
-REPOS="on-taskgraph"
+REPOS="on-dhcp-proxy on-http on-statsd on-syslog on-tftp on-taskgraph on-wss"
 for repo in ${REPOS}; do
     pushd "${SCRIPT_DIR}/../${repo}"
     npm install
@@ -61,8 +60,6 @@ for repo in ${REPOS}; do
     fi
     popd
 done
-
-exit(0)
 
 # last set, generate documentation
 pushd "${SCRIPT_DIR}/../on-http"
