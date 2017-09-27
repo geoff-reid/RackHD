@@ -84,7 +84,10 @@ compute:
             #Set MAC for this network, this MAC is generated with
             #datetime as random seed, but you can specify yours
             #
-            mac: 00:60:16:c2:98:27
+            #mac: 00:60:16:c2:98:27
         
 
     # cdrom: /dev/sr0
+
+    bmc:
+        interface: br0

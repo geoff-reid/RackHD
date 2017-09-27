@@ -1,0 +1,17 @@
+# Copyriht 2017, Dell Inc.
+
+version: '2'
+
+networks:
+  southbound:
+    external: 
+      name: docker_southbound 
+
+services:
+
+  node:
+    build: "."
+    networks:
+      - southbound
+    privileged: true
+    tty: true
